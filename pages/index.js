@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Script from 'next/script';
 import TopHeader from './../src/components/TopHeader/TopHeader';
 import MainSection from './../src/components/MainSection/MainSection';
 import Navbar from '../src/components/Navbar/Navbar';
@@ -15,6 +16,11 @@ export default function Home() {
          <Navbar></Navbar>
         <TopHeader></TopHeader>
        <MainSection></MainSection>
+
+        <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossOrigin="anonymous"></Script>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossOrigin="anonymous"></Script>
+        <Script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossOrigin="anonymous"></Script>
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></Script>
     </div>
   )
 }

@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from 'next/image'
 
 const Footer = () => {
     return (
@@ -10,9 +12,14 @@ const Footer = () => {
                 align-items-center
                 footer-first-line
               ">
-            <a className="logo" href="/">
-              <img src="/images/logo.webp" alt="" />
-            </a>
+            <Link href="/">
+              <a className="logo">
+                <img
+                  src="/images/logo.webp"
+                  alt="image"
+                />
+              </a>
+            </Link>
           </div>
           <div className="
                 d-flex
@@ -21,19 +28,51 @@ const Footer = () => {
                 footer-second-line
               ">
             <div className="d-flex d-md-none justify-content-center join-to-us">
-              <a href="#">Join Our Community</a>
+              <Link href="#">
+                <a>Join Our Community</a>
+              </Link>
             </div>
             <div className="social-contacts">
-              <a href="https://twitter.com/Nekoverse_NFT"><img className="me-2" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter--v1.png" style={{height: '30px'}} /></a>
-              <a href="https://discord.gg/nekoverse"><img className="me-2" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/discord-logo.png" style={{height: '30px'}} /></a>
-              <a href="https://www.instagram.com/nekoverse.nft/"><img className="me-2" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" style={{height: '30px'}} /></a>
+              <Link href="https://twitter.com/Nekoverse_NFT">              
+                <a>
+                  <img 
+                      className="me-2" 
+                      src="/images/footer/twitter--v1.png" 
+                      alt="image"
+                  />
+                </a>
+              </Link>
+              <Link href="https://discord.gg/nekoverse">              
+                <a>
+                  <img 
+                    className="me-2" 
+                    src="/images/footer/discord-logo.png" 
+                    alt="image"
+                    />
+                </a>
+              </Link>
+              <Link href="https://www.instagram.com/nekoverse.nft/">
+                <a>
+                  <img 
+                    className="me-2" 
+                    src="/images/footer/instagram-new.png" 
+                    alt="image" 
+                  />
+                 </a>
+              </Link>
             </div>
             <ul className="footer-menu">
-              <li className="menu-item"><a href="#">Terms of Service</a></li>
-              <li className="menu-item"><a href="#">Privacy Policy</a></li>
-              <li className="menu-item"><a href="#">Help</a></li>
               <li className="menu-item">
-                <a href="#">User Generated Content Policies</a>
+                <Link href="#"><a>Terms of Service</a></Link>
+              </li>
+              <li className="menu-item">
+                <Link  href="#"><a>Privacy Policy</a></Link>
+              </li>
+              <li className="menu-item">
+                <Link  href="#"><a>Help</a></Link>
+              </li>
+              <li className="menu-item">
+                <Link href="#"><a>User Generated Content Policies</a></Link>
               </li>
             </ul>
           </div>
