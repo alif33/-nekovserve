@@ -39,7 +39,7 @@ const NekoBreeding = () => {
                             </div>
                         </div>
                         <div className="position-relative w-100" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
-                            <img src="https://nekoverse.net/resources/home/images/incubator.webp" className="w-100" />
+                            <img src="https://nekoverse.net/resources/home/images/incubator.webp" className="w-100" alt="..." />
                             <img id="neko-variation" className="position-absolute  neko-card-floating" src={`/images/neko-variants/${image}.png`} style={{ width: '45%', margin: 'auto', top: '25%', left: 0, right: 0, bottom: 0 }} />
                         </div>
                     </div>

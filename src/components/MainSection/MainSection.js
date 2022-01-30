@@ -13,7 +13,7 @@ import NekoVerse from "../nekoVerse/NekoVerse";
 import NekoWorld from "../nekoWorld/NekoWorld";
 import OurTeam from "../ourTeam/OurTeam";
 import Partners from "../Partners/Partners";
-import PublicMinting from "../publicMinting/publicMinting";
+import PublicMinting from "../minting/PublicMinting";
 import Roadmap from "../roadmap/Roadmap";
 
 const MainSection = () => {
